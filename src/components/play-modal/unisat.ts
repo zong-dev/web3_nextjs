@@ -11,7 +11,7 @@ export const handleUnisat = async () => {
   let uniSat = window.unisat;
   let cookie = GetCookie('userId');
 
-  if (typeof uniSat !== 'undefined' && cookie == '') {
+  if (typeof uniSat !== 'undefined' || cookie == '') {
     try {
       const address = await uniSat.requestAccounts();
       SetCookie('address', address[0])

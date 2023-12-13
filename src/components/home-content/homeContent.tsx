@@ -23,9 +23,9 @@ const HomeContent:FC = () => {
 
 
   useEffect(() => {
-		setIsLoggedIn(true);
-    router.push('/flip-coin');
-    console.log("component mounted", search);
+		// setIsLoggedIn(true);
+    // router.push('/flip-coin');
+    // console.log("component mounted", search);
   }, [])
 
   if(isLoading) {
